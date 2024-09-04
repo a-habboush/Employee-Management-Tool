@@ -14,41 +14,15 @@
 
   <body>
 
-    <nav class="navbar navbar-dark navbar-expand-lg bg-success">
-      <div class="container-md">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          
-          
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">Profiles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">Reports</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">Settings</a>
-            </li>
-          </ul>
 
-            </div>
-
-        <div class="navbar_buttons d-none d-lg-block">
-            <i class="fa-solid fa-bell fa-xl mx-3"  style="color: #ffffff; cursor: pointer; "></i>
-          <i class="fa-solid fa-circle-user fa-xl" style="color: #ffffff; cursor: pointer; "></i> 
-        </div>
-      
-      </div>
-    </nav>
-
-
+    <div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+      })
+</script>
 
 
       <div class="container-md mt-5">
@@ -67,14 +41,14 @@
 <div class="container-md mt-5">
 <div class="updates">
 
-    <div class="dashboard">
+    <div class="dashboard bg-light rounded-5">
 
     <div class="profileOverview d-flex align-items-center justify-content-between">
 
         <div class="profilePicName d-flex align-items-center w-70">
 
-             <div class="avatar"><img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" alt="">
-             </div>
+             <img class="avatar rounded-circle" src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" alt="">
+             
 
              <div class="p-2">
                 <h5>Ahmad Azmi</h5>
@@ -91,7 +65,7 @@
 
   <div class="stats">
         
-        <div class="" style="display: flex; align-items: center; gap: 1em">
+        <div class="d-flex align-items-center gap-1">
                     <img src="icons/user-solid.svg" alt="" style="width: 1.9em; height: 1.9em;">
             <div>
             <h6>Reporting To:</h6>
@@ -99,7 +73,7 @@
         </div>
     </div>
 
-            <div class="" style="display: flex; align-items: center; gap: 1em">
+            <div class="d-flex align-items-center gap-1">
                     <img src="icons/icons8-growth-96.png" alt="" style="width: 2em; height: 2em;">
                     <div>
                     <h6>Corporate Level:</h6>
@@ -172,11 +146,11 @@
     </div>
   </div>
 
-<div class="container-md" id="last-container">
+<div class="container-md mt-5" id="last-container">
 
-    <div class="vacationReq">
+    <div class="vacationReq bg-light rounded-4">
 
-     <div class="vacationReqHeader d-flex">
+     <div class="vacationReqHeader universalHeader d-flex">
 
       <div class="logo_title d-flex align-items-center gap-3">
 
@@ -184,7 +158,7 @@
       <h4>Vacation Requests</h4>
       </div>
 
-      <div class="search d-flex align-items-center">
+      <div class="search border border-secondary-subtle border-2 rounded-pill d-flex align-items-center">
         <img src="icons/icons8-search-50.png" alt="">
         <input type="text" name="SearchBar" id="searchBar" placeholder="Search...">
       </div>
@@ -197,21 +171,21 @@
         <div class="col">  
         <div class="card">
           <div class="card-head pt-3 d-flex flex-column align-items-center">
-          <div class="avatar avatar-cards">
-          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top" alt="...">
-          </div>
+          
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top avatar-big rounded-circle" alt="...">
+          
           <h5 class="fw-semibold"> Cameron Harding </h5>
         </div> 
 
           <div class="card-body">
             <h6 class="text-body-tertiary">Submitted on:</h6>
-            <p class="fw-semibold">1/3/2024</p>
+            <p class="fw-semibold text-secondary">1/3/2024</p>
 
             <h6 class="text-body-tertiary">Duration:</h6>
-            <p class="fw-semibold">2 Weeks (1/4/2023 - 14/4/2023)</p>
+            <p class="fw-semibold text-secondary ">2 Weeks (1/4/2023 - 14/4/2023)</p>
 
             <h6 class="text-body-tertiary">Salary:</h6>
-            <p class="fw-semibold">1000 AED</p>
+            <p class="fw-semibold text-secondary">1000 AED</p>
             </div>
 
             <div class="card-buttons d-flex justify-content-center gap-3 pb-3">
@@ -226,22 +200,22 @@
     <div class="col">  
         <div class="card">
           <div class="card-head pt-3 d-flex flex-column align-items-center">
-          <div class="avatar avatar-cards">
-          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top" alt="...">
+          <div class="">
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top avatar-big rounded-circle" alt="...">
           </div>
           <h5 class="fw-semibold"> Ahmad Attar </h5>
         </div> 
 
-          <div class="card-body">
-            <h6 class="text-body-tertiary">Submitted on:</h6>
-            <p class="fw-semibold">1/3/2024</p>
+        <div class="card-body">
+          <h6 class="text-body-tertiary">Submitted on:</h6>
+          <p class="fw-semibold text-secondary">1/3/2024</p>
 
-            <h6 class="text-body-tertiary">Duration:</h6>
-            <p class="fw-semibold">2 Weeks (1/4/2023 - 14/4/2023)</p>
+          <h6 class="text-body-tertiary">Duration:</h6>
+          <p class="fw-semibold text-secondary ">2 Weeks (1/4/2023 - 14/4/2023)</p>
 
-            <h6 class="text-body-tertiary">Salary:</h6>
-            <p class="fw-semibold">1000 AED</p>
-            </div>
+          <h6 class="text-body-tertiary">Salary:</h6>
+          <p class="fw-semibold text-secondary">1000 AED</p>
+          </div>
 
             <div class="card-buttons d-flex justify-content-center gap-3 pb-3">
               <button>Decline</button>
@@ -255,22 +229,22 @@
     <div class="col">  
       <div class="card">
         <div class="card-head pt-3 d-flex flex-column align-items-center">
-        <div class="avatar avatar-cards">
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top" alt="...">
-        </div>
+        
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top avatar-big rounded-circle" alt="...">
+        
         <h5 class="fw-semibold"> Steven King </h5>
       </div> 
 
-        <div class="card-body">
-          <h6 class="text-body-tertiary">Submitted on:</h6>
-          <p class="fw-semibold">1/3/2024</p>
+      <div class="card-body">
+        <h6 class="text-body-tertiary">Submitted on:</h6>
+        <p class="fw-semibold text-secondary">1/3/2024</p>
 
-          <h6 class="text-body-tertiary">Duration:</h6>
-          <p class="fw-semibold">2 Weeks (1/4/2023 - 14/4/2023)</p>
+        <h6 class="text-body-tertiary">Duration:</h6>
+        <p class="fw-semibold text-secondary ">2 Weeks (1/4/2023 - 14/4/2023)</p>
 
-          <h6 class="text-body-tertiary">Salary:</h6>
-          <p class="fw-semibold">1000 AED</p>
-          </div>
+        <h6 class="text-body-tertiary">Salary:</h6>
+        <p class="fw-semibold text-secondary">1000 AED</p>
+        </div>
 
           <div class="card-buttons d-flex justify-content-center gap-3 pb-3">
             <button>Decline</button>

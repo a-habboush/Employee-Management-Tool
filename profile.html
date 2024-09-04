@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Profile</title>
+        <script src="https://kit.fontawesome.com/d07a22b2ae.js" crossorigin="anonymous"></script>
+      </head>
+<body>
+
+    <div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+      })
+</script>
+
+
+<div class="container-md mt-5">
+<div class="dashboard bg-light rounded-5">
+
+    <div class="profileOverview d-flex align-items-center justify-content-between mb-3">
+
+        <div class="profilePicName d-flex align-items-center w-70">
+
+             <img class="avatar-med rounded-circle" src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" alt="">
+             
+
+             <div class="p-2">
+                <h5 class="mb-0 fw-semibold">Ahmad Azmi</h5>
+                <h6 class="mb-0 text-secondary">Marketing Department</h6>
+                <h6 class="text-black-50">Junior Accounting Officer</h6>
+            </div>
+        </div>  
+            <Button class=" btn btn-sm btn-success text-light fw-bold me-3" style="width: 10em;">  New Request</Button>
+      
+    </div>
+
+
+  <div class="stats d-flex justify-content-evenly flex-wrap">
+        
+    <div class="d-flex gap-3" >
+            <img src="icons/reportingIcon.png" alt="" style="width: 2.8em; height: 3em;"> 
+           
+            <div class="d-flex flex-column">
+            <h6 class="mb-0 fw-semibold">Reporting To:</h6>
+            <h6 class="text-secondary">Salwa Assem</h6>
+        </div>
+    </div>
+
+    <div class="d-flex gap-3" >
+        <img src="icons/corpLevel.png" alt="" style="width: 2.8em; height: 3em;"> 
+       
+        <div class="d-flex flex-column">
+        <h6 class="mb-0 fw-semibold">Corporate Level:</h6>
+        <h6 class="text-secondary">Level 10</h6>
+    </div>
+</div>
+
+<div class="d-flex gap-3" >
+    <img src="icons/lifetimeIcon.png" alt="" style="width: 2.3em; height: 3em;"> 
+   
+    <div class="d-flex flex-column">
+    <h6 class="mb-0 fw-semibold">Lifetime:</h6>
+    <h6 class="text-secondary">2.5 Years</h6>
+</div>
+</div>
+
+
+<div class="d-flex gap-2" >
+    <img src="icons/vacationIcon.png" alt="" style="width: 2.5em; height: 3em;"> 
+   
+    <div class="d-flex flex-column">
+    <h6 class="mb-0 fw-semibold">Vacation Days Left:</h6>
+    <h6 class="text-secondary">10 Days</h6>
+</div>
+</div>
+
+<div class="d-flex gap-3" >
+    <img src="icons/sickDaysIcon.png" alt="" style="width: 2.8em; height: 3em;"> 
+   
+    <div class="d-flex flex-column">
+    <h6 class="mb-0 fw-semibold">Sick Days Left:</h6>
+    <h6 class="text-secondary">14 Days</h6>
+</div>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+            </div> 
+        </div>
+
+<div class="container-md mt-4">
+
+    <div class="history bg-light rounded-4">
+        
+        <div class="historyHeader universalHeader d-flex">
+        
+            <div class="logo_title d-flex align-items-center gap-3">
+        
+              <img src="icons/requestIconGreen.png" alt="">
+              <h4>History</h4>
+            </div>
+        
+            
+        </div>
+        
+        <div class="historyBody">
+        
+            <div id="cardList" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-4 py-3 w-100" >
+               
+            <div class="col"> 
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h6 class="mb-0 fw-semibold">Annual Vacation</h6>
+                        <h6 class="d-inline text-secondary">2/3/2023 - 10/3/2023</h6>
+                      <h6 class="d-inline fw-semibold text-secondary ps-1"> 8 days</h6>
+                    <h6 class="mt-2 text-secondary">Approved by: Hazem Azmi</h6>                      
+                    </div>
+                  </div> 
+            </div>
+        
+        
+            <div class="col">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h6 class="mb-0 fw-semibold">Sick Vacation</h6>
+                        <h6 class="d-inline text-secondary">2/3/2023 - 10/3/2023</h6>
+                      <h6 class="d-inline fw-semibold text-secondary ps-1"> 8 days</h6>
+                    <h6 class="mt-2 text-secondary">Approved by: Hazem Azmi</h6>                      
+                    </div>
+                  </div> 
+            </div>
+        
+        
+            <div class="col">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h6 class="mb-0 fw-semibold">Annual Vacation</h6>
+                        <h6 class="d-inline text-secondary">2/3/2023 - 10/3/2023</h6>
+                      <h6 class="d-inline fw-semibold text-secondary ps-1"> 8 days</h6>
+                    <h6 class="mt-2 text-secondary">Approved by: Hazem Azmi</h6>                      
+                    </div>
+                  </div> 
+          </div>
+
+          <div class="col">
+            <div class="card w-100">
+                <div class="card-body">
+                    <h6 class="mb-0 fw-semibold">Non Paid Vacation</h6>
+                    <h6 class="d-inline text-secondary">2/3/2023 - 10/3/2023</h6>
+                  <h6 class="d-inline fw-semibold text-secondary ps-1"> 8 days</h6>
+                <h6 class="mt-2 text-secondary">Approved by: Hazem Azmi</h6>                      
+                </div>
+              </div>    
+          </div>
+              
+            </div>
+        
+            <div id="cardList" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-4 py-3 w-100" > 
+
+            <div class="col">  
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h6 class="mb-0 fw-semibold">Annual Vacation</h6>
+                        <h6 class="d-inline text-secondary">2/3/2023 - 10/3/2023</h6>
+                      <h6 class="d-inline fw-semibold text-secondary ps-1"> 8 days</h6>
+                    <h6 class="mt-2 text-secondary">Approved by: Hazem Azmi</h6>                      
+                    </div>
+                  </div>    
+            </div>
+            
+            <div class="col">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h6 class="mb-0 fw-semibold">Non Paid Vacation</h6>
+                        <h6 class="d-inline text-secondary">2/3/2023 - 10/3/2023</h6>
+                      <h6 class="d-inline fw-semibold text-secondary ps-1"> 8 days</h6>
+                    <h6 class="mt-2 text-secondary">Approved by: Hazem Azmi</h6>                      
+                    </div>
+                  </div>   
+            </div>
+
+            <div class="col">  
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h6 class="mb-0 fw-semibold">Sick Vacation</h6>
+                        <h6 class="d-inline text-secondary">2/3/2023 - 10/3/2023</h6>
+                      <h6 class="d-inline fw-semibold text-secondary ps-1"> 8 days</h6>
+                    <h6 class="mt-2 text-secondary">Approved by: Hazem Azmi</h6>                      
+                    </div>
+                  </div> 
+            </div>
+
+        
+        </div>
+
+              </div>
+              <div class="viewMore d-flex justify-content-end mx-4 pb-2 ">
+                <a class="text-success fw-semibold text-decoration-none fs-6" href="#">View More ></a>
+              </div>
+            </div>
+        
+        </div>
+
+<div class="container-md mt-5" id="last-container">
+
+    <div class="vacationReq bg-light rounded-4">
+        
+        <div class="vacationReqHeader universalHeader d-flex">
+        
+            <div class="logo_title d-flex align-items-center gap-3">
+        
+              <img src="icons/requestIconGreen.png" alt="">
+              <h4>Pending Requests</h4>
+              </div>
+        
+              </div>
+        
+              <div class="vacationReqBody d-flex">
+        
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 w-100" id="cardList">
+               
+                <div class="col">  
+                <div class="card">
+                  <div class="card-head pt-3 d-flex flex-column align-items-center">
+                  
+                  <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top avatar-big rounded-circle" alt="...">
+                  
+                  <h5 class="fw-semibold"> Cameron Harding </h5>
+                </div> 
+        
+                  <div class="card-body">
+                    <h6 class="text-body-tertiary mb-0">Submitted on:</h6>
+                    <p class="fw-semibold text-secondary">1/3/2024</p>
+        
+                    <h6 class="text-body-tertiary mb-0">Duration:</h6>
+                    <p class="fw-semibold text-secondary ">2 Weeks (1/4/2023 - 14/4/2023)</p>
+        
+                    <h6 class="mt-5 mb-0">Currently at:</h6>
+                    <p class="fw-bold text-success">Omar Ahmad</p>
+                    </div>
+        
+                    
+        
+              </div>
+            </div>
+        
+        
+            <div class="col">  
+                <div class="card">
+                  <div class="card-head pt-3 d-flex flex-column align-items-center">
+                  
+                  <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top avatar-big rounded-circle" alt="...">
+                  
+                  <h5 class="fw-semibold"> Cameron Harding </h5>
+                </div> 
+        
+                  <div class="card-body">
+                    <h6 class="text-body-tertiary mb-0">Submitted on:</h6>
+                    <p class="fw-semibold text-secondary">1/3/2024</p>
+        
+                    <h6 class="text-body-tertiary mb-0">Duration:</h6>
+                    <p class="fw-semibold text-secondary ">2 Weeks (1/4/2023 - 14/4/2023)</p>
+        
+                    <h6 class="mt-5 mb-0">Currently at:</h6>
+                    <p class="fw-bold text-success">Omar Ahmad</p>
+                    </div>
+        
+                    
+        
+              </div>
+            </div>
+        
+        
+            
+              
+            </div>
+        
+              </div>
+              <div class="viewMore d-flex justify-content-end mx-4 pb-2">
+                <a class="text-success fw-semibold text-decoration-none fs-6" href="#">View More ></a>
+              </div>
+            </div>
+        
+        </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+</body>
+</html>

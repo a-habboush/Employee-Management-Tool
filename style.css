@@ -1,36 +1,23 @@
-.navbar{
-    background-color: #229141;
-}
 
 .avatar{
- 
 width: 50px;
 height: 50px;
-border-radius: 50%;
-overflow: hidden;
-
-img{
-    width: 100%;
-    height: 100%;
-}
 }
 
-.avatar-cards{
+.avatar-med{
     width: 70px;
     height: 70px;
-
-
-    
 }
 
-
-.rounded{
-    border-radius: 1em;
+.avatar-big{
+width: 100px;
+height: 100px;  
 }
+
 
 
 .updates{
-    gap: 2em;
+gap: 2em;
 justify-content: center;
 display: flex;
 flex-wrap: wrap;
@@ -42,8 +29,6 @@ margin: 2em 0em;
 .dashboard{
 padding: 1em;
 min-width: 20em;
-background-color: #e7e7e7;
-border-radius: 2em;
 box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.42);
 flex-grow: 1;
 }
@@ -83,8 +68,7 @@ min-width: none;
 }
 
 .carousel-caption{
-    padding-left: 1em;
-    
+    padding-left: 1em;  
     height: 10vh;
     width: 100%;
     bottom: 0;
@@ -107,29 +91,27 @@ min-width: none;
 
 
   .vacationReq{
-    background-color: #e7e7e7;
-    border-radius: 1em;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.42);
     
 
   }
 
-  .vacationReqHeader{
+  .universalHeader{
     justify-content: space-between;
-    
     padding: 1em;
    
-    
      img{
         width: 3em;
         height: 3em;
 
     }
   }
+
+  
 .search{
     gap: 0.5em;
     background-color: #ffffff;
     padding: 0 0.5em;
-    border-radius: 1em;
 
 input{
     height: 4vh;
@@ -151,9 +133,14 @@ padding: 1em 2em;
 }
 
 #last-container{
-margin-top: 10vh;
+
 margin-bottom: 20vh;
 
+}
+
+
+.history{
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.42);
 }
 
 
