@@ -15,7 +15,7 @@
   <body>
 
 
-    <div id="navbar"></div>
+<div id="navbar"></div>
 <script>
   fetch('navbar.html')
     .then(response => response.text())
@@ -28,10 +28,10 @@
       <div class="container-md mt-5">
 
         <div class="row align-items-center mx-1">
-          <div class="col-9 col-lg-10">
+          <div class="col-7 col-lg-10">
             <h4 class="fw-semibold"> Welcome Back Hazem! Here are your latest updates. </h4>
           </div>
-          <div class="col-3 col-lg-2">
+          <div class="col-5 col-sm-3 col-lg-2">
             <Button class=" btn btn-sm btn-success text-light fw-bold" style="width: 90%;">  New Request</Button>
           </div>
           
@@ -57,7 +57,7 @@
         </div>  
 
         <div class="w-25">
-            <Button class=" btn btn-sm btn-outline-success fw-semibold" style="width: 90%;">View Profile</Button>
+            <Button id="viewProfile" class="btn btn-sm btn-outline-success fw-semibold" style="width: 90%;">View Profile</Button>
         </div>
 
     </div>
@@ -160,13 +160,14 @@
 
       <div class="search border border-secondary-subtle border-2 rounded-pill d-flex align-items-center">
         <img src="icons/icons8-search-50.png" alt="">
-        <input type="text" name="SearchBar" id="searchBar" placeholder="Search...">
+        <input style="outline:none;" type="text" name="SearchBar" id="searchBar" placeholder="Search...">
       </div>
       </div>
+      <hr class="mt-2 border-2 mx-4 mx-sm-5">
 
-      <div class="vacationReqBody d-flex">
+      <div class="vacationReqBody d-flex mx-1 mx-xxl-5">
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 w-100" id="cardList">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 w-100" id="cardList">
        
         <div class="col">  
         <div class="card">
@@ -177,20 +178,20 @@
           <h5 class="fw-semibold"> Cameron Harding </h5>
         </div> 
 
-          <div class="card-body">
-            <h6 class="text-body-tertiary">Submitted on:</h6>
-            <p class="fw-semibold text-secondary">1/3/2024</p>
+        <div class="p-3">
+          <p class="text-body-tertiary mb-0">Submitted on:</p>
+          <p class="fw-semibold text-secondary mb-1">1/3/2024</p>
+    
+          <p class="text-body-tertiary mb-0">Duration:</p>
+          <p class="fw-semibold text-secondary mb-1">2 Weeks (1/4/2023 - 14/4/2023)</p>
+    
+        <p class="text-body-tertiary mb-0">Salary:</p>
+        <p class="fw-semibold text-secondary mb-1">1000 AED</p>
+        </div>
 
-            <h6 class="text-body-tertiary">Duration:</h6>
-            <p class="fw-semibold text-secondary ">2 Weeks (1/4/2023 - 14/4/2023)</p>
-
-            <h6 class="text-body-tertiary">Salary:</h6>
-            <p class="fw-semibold text-secondary">1000 AED</p>
-            </div>
-
-            <div class="card-buttons d-flex justify-content-center gap-3 pb-3">
-              <button>Decline</button>
-              <button>Approve</button>
+            <div class="card-buttons d-flex justify-content-center gap-1 pb-4">
+              <button class="btn btn-sm btn-outline-success fw-semibold" style="width: 8em;">Decline</button>
+              <button class=" btn btn-sm btn-success text-light fw-semibold" style="width: 8em;">Approve</button>
             </div>
 
       </div>
@@ -206,20 +207,20 @@
           <h5 class="fw-semibold"> Ahmad Attar </h5>
         </div> 
 
-        <div class="card-body">
-          <h6 class="text-body-tertiary">Submitted on:</h6>
-          <p class="fw-semibold text-secondary">1/3/2024</p>
+        <div class="p-3">
+          <p class="text-body-tertiary mb-0">Submitted on:</p>
+          <p class="fw-semibold text-secondary mb-1">1/3/2024</p>
+    
+          <p class="text-body-tertiary mb-0">Duration:</p>
+          <p class="fw-semibold text-secondary mb-1">2 Weeks (1/4/2023 - 14/4/2023)</p>
+    
+        <p class="text-body-tertiary mb-0">Salary:</p>
+        <p class="fw-semibold text-secondary mb-1">1000 AED</p>
+        </div>
 
-          <h6 class="text-body-tertiary">Duration:</h6>
-          <p class="fw-semibold text-secondary ">2 Weeks (1/4/2023 - 14/4/2023)</p>
-
-          <h6 class="text-body-tertiary">Salary:</h6>
-          <p class="fw-semibold text-secondary">1000 AED</p>
-          </div>
-
-            <div class="card-buttons d-flex justify-content-center gap-3 pb-3">
-              <button>Decline</button>
-              <button>Approve</button>
+            <div class="card-buttons d-flex justify-content-center gap-1 pb-4">
+              <button class="btn btn-sm btn-outline-success fw-semibold" style="width: 8em;">Decline</button>
+              <button class=" btn btn-sm btn-success text-light fw-semibold" style="width: 8em;">Approve</button>
             </div>
 
       </div>
@@ -235,20 +236,20 @@
         <h5 class="fw-semibold"> Steven King </h5>
       </div> 
 
-      <div class="card-body">
-        <h6 class="text-body-tertiary">Submitted on:</h6>
-        <p class="fw-semibold text-secondary">1/3/2024</p>
+      <div class="p-3">
+        <p class="text-body-tertiary mb-0">Submitted on:</p>
+        <p class="fw-semibold text-secondary mb-1">1/3/2024</p>
+  
+        <p class="text-body-tertiary mb-0">Duration:</p>
+        <p class="fw-semibold text-secondary mb-1">2 Weeks (1/4/2023 - 14/4/2023)</p>
+  
+      <p class="text-body-tertiary mb-0">Salary:</p>
+      <p class="fw-semibold text-secondary mb-1">1000 AED</p>
+      </div>
 
-        <h6 class="text-body-tertiary">Duration:</h6>
-        <p class="fw-semibold text-secondary ">2 Weeks (1/4/2023 - 14/4/2023)</p>
-
-        <h6 class="text-body-tertiary">Salary:</h6>
-        <p class="fw-semibold text-secondary">1000 AED</p>
-        </div>
-
-          <div class="card-buttons d-flex justify-content-center gap-3 pb-3">
-            <button>Decline</button>
-            <button>Approve</button>
+          <div class="card-buttons d-flex justify-content-center gap-1 pb-4">
+            <button class="btn btn-sm btn-outline-success fw-semibold" style="width: 8em;">Decline</button>
+            <button class=" btn btn-sm btn-success text-light fw-semibold" style="width: 8em;">Approve</button>
           </div>
 
     </div>
@@ -258,7 +259,7 @@
 
       </div>
       <div class="viewMore d-flex justify-content-end mx-4 pb-2">
-        <a class="text-success fw-semibold text-decoration-none fs-6" href="#">View More ></a>
+        <a class="text-success fw-semibold text-decoration-none fs-6" href="vacationrequests.html">View More ></a>
       </div>
     </div>
 

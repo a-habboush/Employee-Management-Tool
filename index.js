@@ -1,17 +1,20 @@
 
-const searchbar = document.getElementById('searchBar');
+const searchbarHome = document.getElementById('searchBar');
 const reqCards = document.querySelectorAll('.vacationReqBody .col');
+const viewProf = document.getElementById('viewProfile');
 
 
 
+// view profile button on home page
+viewProf.addEventListener('click', () => {
+    window.location.href = "profile.html";
+})
 
 
+// search functionality
 
-
-
-searchbar.addEventListener('input', e => {
+searchbarHome.addEventListener('input', e => {
 const inputValue = e.target.value.toLowerCase();
-
 
 reqCards.forEach(card => {
 
@@ -22,8 +25,15 @@ reqCards.forEach(card => {
 
 })
 
-    
-    
+
+
+
+
+
+
+
+
+
 
 
     
