@@ -20,10 +20,13 @@ reqCards.forEach(card => {
 
     const isVisible = card.querySelector("h5").textContent.toLowerCase().includes(inputValue);
     card.classList.toggle("hide", !isVisible)
- 
+
  })
 
 })
+
+
+
 
 
 

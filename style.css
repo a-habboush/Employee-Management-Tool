@@ -1,7 +1,11 @@
+.active{
+font-weight: 600;
+
+}
 
 .avatar{
-width: 50px;
-height: 50px;
+width: 60px;
+height: 60px;
 }
 
 .avatar-med{
@@ -14,39 +18,16 @@ width: 100px;
 height: 100px;  
 }
 
-
-.updates{
-gap: 2em;
-justify-content: center;
-display: flex;
-flex-wrap: wrap;
-margin: 2em 0em;
-
+.boxshadow{
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.42);
 }
-
-
-.dashboard{
-padding: 1em;
-min-width: 20em;
-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.42);
-flex-grow: 1;
-}
-
-.stats{
-display: flex;
-gap: 2em;
-}
-
 
     
 .InfoCard{
-min-width: none;
     display: flex;
     padding: 1em 2em;
     align-items: center;
-    border-radius: 2em;
-    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.42);
-    
+
     h6{
         font-size: 4em;
     }
@@ -58,7 +39,7 @@ min-width: none;
 
 
 #carItem{
-    height: 25vh;
+    height: 17em;
 }
 
 #carImg{
@@ -67,8 +48,8 @@ min-width: none;
 }
 
 .carousel-caption{
-    padding-left: 1em;  
-    height: 10vh;
+    padding-left: 1.5em;  
+    height: 40%;
     width: 100%;
     bottom: 0;
     left:0;
@@ -80,25 +61,17 @@ min-width: none;
     position: relative;
 }
 
-
+/* makes carousel indicators circles */
 .carousel-indicators [data-bs-target] {
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 11px;
+    height: 11px;
   }
 
-
-
-  .vacationReq{
-    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.42);
-    
-  }
 
   .universalHeader img{
-     
         width: 3em;
         height: 3em;
-
   }
 
   
@@ -115,8 +88,8 @@ input{
 }
 
 img{
-    width: 2rem;
-    height: 2rem;
+    width: 1.8em;
+    height: 1.7em;
     
     }
   }
@@ -134,12 +107,15 @@ margin-bottom: 20vh;
     box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.42);
 }
 
+.hide {
+    display: none;
+  }
+
+
+/* makes checkboxes green when checked */
 .form-check-input:checked {
     background-color: #198754; 
     border-color: #198754; 
   }
 
 
-.hide {
-    display: none;
-  }

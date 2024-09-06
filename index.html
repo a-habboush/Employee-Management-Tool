@@ -17,68 +17,60 @@
 
 <div id="navbar"></div>
 <script>
+
   fetch('navbar.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('navbar').innerHTML = data;
-      })
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('navbar').innerHTML = html;
+    document.getElementById('navbar').querySelector('.homeNav').classList.add('active');
+   
+  })
 </script>
 
 
-      <div class="container-md mt-5">
-
-        <div class="row align-items-center mx-1">
-          <div class="col-7 col-lg-10">
-            <h4 class="fw-semibold"> Welcome Back Hazem! Here are your latest updates. </h4>
-          </div>
-          <div class="col-5 col-sm-3 col-lg-2">
-            <Button class=" btn btn-sm btn-success text-light fw-bold" style="width: 90%;">  New Request</Button>
-          </div>
-          
-        </div>
-      </div>
+<div class="container-md mt-5 d-flex justify-content-between gap-4">
+            <h4 class="fw-semibold"> Welcome Back Ahmad! Here are your latest updates. </h4>
+            <Button class=" btn btn-sm btn-success text-light fw-bold" style="width: 10em">New Request</Button>
+</div>
 
 <div class="container-md mt-5">
-<div class="updates">
+  
+  <div class="updates d-flex justify-content-evenly flex-wrap gap-4">
 
-    <div class="dashboard bg-light rounded-5">
+    <div class="dashboard boxshadow bg-light rounded-5 flex-grow-1 px-3 py-2">
 
     <div class="profileOverview d-flex align-items-center justify-content-between">
 
-        <div class="profilePicName d-flex align-items-center w-70">
+        <div class="profilePicName d-flex align-items-center gap-2">
 
-             <img class="avatar rounded-circle" src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" alt="">
-             
-
-             <div class="p-2">
-                <h5>Ahmad Azmi</h5>
-                <h6>Junior Accounting Officer</h6>
+             <img class="avatar rounded-circle" src="https://cdn-icons-png.flaticon.com/512/6522/6522516.png" alt="">
+            
+             <div>
+              <h5 class="mb-1 fw-semibold">Ahmad Azmi</h5>
+              <h6 class="text-body-tertiary">Junior Accounting Officer</h6>
             </div>
-        </div>  
-
-        <div class="w-25">
-            <Button id="viewProfile" class="btn btn-sm btn-outline-success fw-semibold" style="width: 90%;">View Profile</Button>
-        </div>
-
-    </div>
-
-
-  <div class="stats">
+        </div> 
+            <Button id="viewProfile" class="btn btn-sm btn-outline-success fw-semibold" style="width: 10em">View Profile</Button>
         
-        <div class="d-flex align-items-center gap-1">
-                    <img src="icons/user-solid.svg" alt="" style="width: 1.9em; height: 1.9em;">
-            <div>
-            <h6>Reporting To:</h6>
-            <h6>Salwa Assem</h6>
+    </div>
+
+
+  <div class="stats mt-4 d-flex gap-5">
+        
+        <div class="d-flex align-items-center gap-3">
+                    <img src="icons/reportingIcon.png" alt="" style="width: 3em; height: 3em;">
+            <div class="pt-2">
+              <h6 class="mb-0 fw-semibold">Reporting To:</h6>
+              <h6 class="text-secondary">Salwa Assem</h6>
         </div>
     </div>
 
-            <div class="d-flex align-items-center gap-1">
-                    <img src="icons/icons8-growth-96.png" alt="" style="width: 2em; height: 2em;">
-                    <div>
-                    <h6>Corporate Level:</h6>
-                    <h6>Level 10</h6>
-                </div>
+            <div class="d-flex align-items-center gap-3">
+                    <img src="icons/corpLevel.png" alt="" style="width: 3em; height: 3em;">
+                    <div class="pt-2">
+                      <h6 class="mb-0 fw-semibold">Corporate Level:</h6>
+                      <h6 class="text-secondary">Level 10</h6>
+                    </div>
             </div>
 
         </div>
@@ -87,7 +79,7 @@
     
         <div class="requestsInfoCards d-flex justify-content-center gap-4">
 
-            <div class="InfoCard bg-success text-light gap-2 gap-sm-4 px-sm-4 px-1">
+            <div class="InfoCard bg-success text-light boxshadow rounded-4 gap-1 gap-sm-4 px-sm-4 px-1">
                 <div class="d-block text-center">
                     <img src="icons/requestIcon.png" alt="">
                     <p>Vacation <br> Requests</p>
@@ -95,7 +87,7 @@
                     <h6>10</h6>
             </div>
 
-            <div class="InfoCard bg-success text-light gap-2 gap-sm-4 px-sm-4 px-1" >
+            <div class="InfoCard bg-success text-light boxshadow rounded-4 gap-1 gap-sm-4 px-sm-4 px-1" >
                 <div class="d-block text-center">
                     <img src="icons/requestIcon.png" alt="">
                     <p>Vacation <br> Requests</p>
@@ -114,43 +106,45 @@
       <h5 class="fw-semibold">Latest News:</h5>
 
       <!-- mobile only image slider caption -->
-      <h6 class="fw-bold d-block d-md-none">Best Spots For A Summer Vacation</h5>
+      <h6 class="fw-bold d-block d-md-none">Best Spots For A Summer Vacation</h6>
       <p class="d-block d-md-none">Check out these spots where we provide you with a discount code! Type VACATION when inserting the promo code and behold the surprise!</p>
      
       
-    <div id="carouselExampleAutoplaying" class="carousel_slide carousel-dark" data-bs-ride="carousel">
+    <div id="imageSlider" class="carousel_slide" data-bs-ride="carousel">
       
       <div class="carousel-inner">        
         <div class="carousel-item active" data-bs-interval="10000" id="carItem">
-          <img src="icons/peakpx(1).jpg" class="d-block w-100" alt="..." id="carImg">
+          <img src="icons/cruise.jpg" class="d-block w-100" alt="..." id="carImg">
         </div>
 
         <div class="carousel-item" data-bs-interval="10000" id="carItem">
-          <img src="icons/peakpx(2).jpg" class="d-block w-100" alt="..." id="carImg"> 
+          <img src="icons/beach.jpg" class="d-block w-100" alt="..." id="carImg"> 
         </div>
 
         <div class="carousel-item" data-bs-interval="10000" id="carItem">
-          <img src="icons/peakpx(4).jpg" class="d-block w-100" alt="..." id="carImg">
+          <img src="icons/lake.jpg" class="d-block w-100" alt="..." id="carImg">
         </div>
 
         <div class="carousel-caption d-none d-md-block w-100">
-          <h6 class="fw-bold">Best Spots For A Summer Vacation</h5>
+          <h5 class="fw-semibold">Best Spots For A Summer Vacation</h5>
           <p>Check out these spots where we provide you with a discount code! Type VACATION when inserting the promo code and behold the surprise!</p>
         </div>
       </div>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div class="carousel-indicators position-relative mt-2">
+        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1" class="bg-secondary" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2" class="bg-secondary" aria-label="Slide 3"></button>
       </div>
     </div>
   </div>
 
+
+
 <div class="container-md mt-5" id="last-container">
 
-    <div class="vacationReq bg-light rounded-4">
+    <div class="vacationReq boxshadow bg-light rounded-4">
 
-     <div class="vacationReqHeader universalHeader d-flex">
+     <div class="universalHeader d-flex justify-content-between mx-sm-2 pt-4 px-3">
 
       <div class="logo_title d-flex align-items-center gap-3">
 
@@ -163,17 +157,17 @@
         <input style="outline:none;" type="text" name="SearchBar" id="searchBar" placeholder="Search...">
       </div>
       </div>
-      <hr class="mt-2 border-2 mx-4 mx-sm-5">
+      <hr class="mt-4 border-2 mx-4 mx-sm-4">
 
-      <div class="vacationReqBody d-flex mx-1 mx-xxl-5">
+      <div class="vacationReqBody d-flex mx-2 mx-sm-4 mx-xxl-5">
 
       <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 w-100" id="cardList">
        
         <div class="col">  
-        <div class="card">
+        <div class="card boxshadow">
           <div class="card-head pt-3 d-flex flex-column align-items-center">
           
-          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top avatar-big rounded-circle" alt="...">
+          <img src="https://cdn-icons-png.flaticon.com/512/6522/6522516.png" class="card-img-top avatar-big rounded-circle" alt="...">
           
           <h5 class="fw-semibold"> Cameron Harding </h5>
         </div> 
@@ -199,10 +193,10 @@
 
 
     <div class="col">  
-        <div class="card">
+        <div class="card boxshadow">
           <div class="card-head pt-3 d-flex flex-column align-items-center">
           <div class="">
-          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top avatar-big rounded-circle" alt="...">
+          <img src="https://cdn-icons-png.flaticon.com/512/6522/6522516.png" class="card-img-top avatar-big rounded-circle" alt="...">
           </div>
           <h5 class="fw-semibold"> Ahmad Attar </h5>
         </div> 
@@ -228,10 +222,10 @@
 
 
     <div class="col">  
-      <div class="card">
+      <div class="card boxshadow">
         <div class="card-head pt-3 d-flex flex-column align-items-center">
         
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGgnOlxjsVWUw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723980346701?e=1730937600&v=beta&t=yVxN-Z756UGrIPStUzUdGCHZt3hQdtm6nRtVhnSqub8" class="card-img-top avatar-big rounded-circle" alt="...">
+        <img src="https://cdn-icons-png.flaticon.com/512/6522/6522516.png" class="card-img-top avatar-big rounded-circle" alt="...">
         
         <h5 class="fw-semibold"> Steven King </h5>
       </div> 
